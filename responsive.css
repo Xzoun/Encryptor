@@ -1,0 +1,66 @@
+@media (max-width:768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .board {
+        flex-direction: column;
+    }
+
+    #sideHolder img {
+        display: none;
+    }
+
+    h5 {
+        font-size: 0.7rem;
+    }
+
+    .boton {
+        padding: 10px;
+    }
+
+    #sideBar,
+    #leftSide {
+        width: 100%;
+    }
+
+    #texto {
+        font-size: 0.9rem;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #salida {
+        height: auto;
+    }
+
+    #salidaContainer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    .board {
+        flex-direction: column;
+    }
+
+    #sideHolder img {
+        display: none;
+    }
+
+    h5 {
+        font-size: 0.5rem;
+    }
+
+    .boton {
+        padding: 10px;
+    }
+
+    #salida {
+        height: auto;
+    }
+}

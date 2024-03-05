@@ -11,6 +11,18 @@ body {
     background-color: #f3f5fc;
 }
 
+#alerta {
+    display: none;
+    position: fixed;
+    left: 40%;
+    bottom: 5%;
+    width: 20%;
+    padding: 18px;
+    border-radius: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
 /* --------------------- Header */
 h1 {
     font-weight: 700;
@@ -34,17 +46,22 @@ header img {
     align-items: center;
     justify-content: center;
     height: 89vh;
+    margin-top: 20px;
 }
 
-#areaIngresoTexto {
+.textArea {
     border: none;
     resize: none;
     outline: none;
-    font-size: 32px;
-    max-height: 60vh;
 }
 
-#areaIngresoTexto::placeholder {
+#texto {
+    font-size: 25px;
+    max-height: 60vh;
+    color: #0A3871;
+}
+
+#texto::placeholder {
     color: #0A3871;
 }
 
@@ -62,11 +79,33 @@ header img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: 90%;
+    width: 30%;
 }
 
 #sideBar img {
-    width: 60%;
+    width: 250px;
+}
+
+#salida {
+    height: 60vh;
+    width: 300px;
+    color: #495057;
+    font-size: 20px;
+}
+
+#salidaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    display: none;
+}
+
+#sideHolder h3,
+#sideHolder h6{
+    text-align: center;
 }
 
 /* --------------------- Aviso */
@@ -74,6 +113,7 @@ header img {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 20px 0;
 }
 
 .aviso img {
@@ -104,6 +144,11 @@ header img {
     padding: 18px;
     border-radius: 24px;
     font-size: 12px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    scale: 1.05;
 }
 
 #encriptar {
@@ -111,8 +156,39 @@ header img {
     background-color: #0A3871;
 }
 
-#desencriptar {
+#desencriptar,#copiar {
     color: #0A3871;
     border: #0A3871 solid 1px;
     background-color: #D8DFE8;
+}
+
+/* --------------------- Footer */
+footer {
+    margin-top: 1vh;
+    height: 5vh;
+    padding: 3vh 0;
+    display: flex;
+    justify-content: end;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: min-content;
+    margin-right: 5vw;
+}
+
+footer a img {
+    height: 5vh;
+
+}
+
+footer a:hover {
+    color: #0A3871;
+}
+
+footer a:hover img {
+    scale: 1.05;
 }

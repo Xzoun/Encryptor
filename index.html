@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafío alura</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="icon" href="./imagenes/LeBenitez!.ico">
 </head>
 
 <body>
@@ -16,11 +18,11 @@
 
     <div class="board">
         <div id="leftSide">
-            <textarea id="areaIngresoTexto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="textArea" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
                 <div class="aviso">
                     <img src="./imagenes/alert.png" alt="Aviso" />
-                    <h6>Solo letras minúsculas y sin acentos.</h6>
+                    <h5>Solo letras minúsculas y sin acentos.</h5>
                 </div>
 
                 <div id="botones">
@@ -29,14 +31,28 @@
                 </div>
             </div>
         </div>
+
         <aside id="sideBar">
-            <img src="./imagenes/Muñeco.png" alt="Ilustración de búsqueda">
-            <h3>sdf</h3>
-            <h6>asdf</h6>
+            <div id="sideHolder">
+                <img src="./imagenes/Muñeco.png" alt="Ilustración de búsqueda">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <h6>Ingresa el texto que desees encriptar o desencriptar.</h6>
+            </div>
+
+            <div id="salidaContainer">
+                <textarea id="salida" class="textArea"></textarea>
+                <button id="copiar" class="boton">copiar</button>
+            </div>
         </aside>
 
     </div>
+    <h3 id="alerta">Texto Copiado</h3>
+    <footer>
+        <a href="https://portfolio-leb.web.app/"> <img src="./imagenes/LeBenitez!.png" alt="LeBenitez Logo" />
+            LeBenitez!</a>
 
+    </footer>
+    <script src="encryptor.js"></script>
 </body>
 
 </html>
